@@ -1,6 +1,7 @@
 import certificateFullStack from "@/assets/images/certificate-fullStack.png";
 import certificateFrontEnd from "@/assets/images/certificate-frontEnd.png";
 import certificateITSupport from "@/assets/images/certificate-ITSupport.png";
+import certificateTestingBootcamp from "@/assets/images/certificateTestingBootcamp.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -9,12 +10,23 @@ import { Card } from "@/components/Card";
 const portfoliocertificates = [
   {
     schoolName: "Udemy",
+    year: "2025",
+    title: "The Complete Software Testing Bootcamp",
+    results: [
+      { title: "JIRA/Zephyr Scale, Trello, Postman;" },
+      { title: "Selenium, Playwright, Katalon Studio;" },
+      { title: "JMeter, SQL + Performance/Mobile QA;" },
+    ],
+    image: certificateTestingBootcamp,
+  },
+  {
+    schoolName: "Udemy",
     year: "2023",
     title: "IT Support Technical Skills Bootcamp",
     results: [
-      { title: "Windows services and operating systems" },
-      { title: "User account management and AD" },
-      { title: "System monitoring and optimization" },
+      { title: "Windows services and operating systems;" },
+      { title: "User account management and AD;" },
+      { title: "System monitoring and optimization;" },
     ],
     image: certificateITSupport,
   },
@@ -23,9 +35,9 @@ const portfoliocertificates = [
     year: "2022",
     title: "Front End Development Advanced Studies",
     results: [
-      { title: "Responsive design development" },
-      { title: "TailwindCSS, JavaScript" },
-      { title: "MERN stack: Node.js, MongoDB, React.js" },
+      { title: "Responsive design development;" },
+      { title: "Bootstrap, JavaScript;" },
+      { title: "MERN stack: Node.js, MongoDB, React.js;" },
     ],
     image: certificateFrontEnd,
   },
@@ -34,9 +46,9 @@ const portfoliocertificates = [
     year: "2021",
     title: "Full Stack Programming",
     results: [
-      { title: "HTML5, CSS3, Bootstrap" },
-      { title: "JavaScript" },
-      { title: "PHP/MySQL" },
+      { title: "HTML5, CSS3, Bootstrap;" },
+      { title: "JavaScript;" },
+      { title: "PHP/MySQL;" },
     ],
     image: certificateFullStack,
   },

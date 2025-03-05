@@ -1,4 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import portfolioProject01 from "@/assets/images/portfolio-project-01.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
@@ -9,16 +9,16 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    testType: "Manual testing",
-    year: "2024",
-    title: "Project title #1",
+    testType: "Automation testing",
+    year: "2025",
+    title: "Automation Exercise",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Simulated real user scenarios and validated UI elements efficiently;" },
+      { title: "Focused on frontend behavior with real-time reloading and debugging;" },
+      { title: "Utilized for API testing, ensured seamless backend communication;" },
     ],
-    link: "https://github.com/EgleGriciute",
-    image: darkSaasLandingPage,
+    link: "https://github.com/EgleGriciute?tab=repositories&q=automation-exercise&type=&language=&sort=",
+    image: portfolioProject01,
   },
   {
     testType: "Manual testing",
@@ -90,7 +90,7 @@ export const ProjectsSection = () => {
                     rel="noopener noreferrer"
                   >
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto md:px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>Visit Live Site</span>
+                      <span>Source code</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>

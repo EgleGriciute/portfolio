@@ -7,6 +7,9 @@ const nextConfig = {
     unoptimized: true,
   },
 
+  // Trailing slash for static exports
+  trailingSlash: true,
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -55,13 +58,13 @@ const nextConfig = {
 
   // Explicitly disable static route indicators
   devIndicators: {
-    buildActivity: false, // Hides build activity indicator
-    isrStatus: false, // Hides ISR (Incremental Static Regeneration) status indicator
+    buildActivity: false,
+    isrStatus: false,
   },
 
-  // Set the basePath and assetPrefix for GitHub Pages
-  basePath: "/portfolio", // Adjust based on your deployment path
-  assetPrefix: "/portfolio", // Ensures assets are served correctly
+  // Set the basePath and assetPrefix for GitHub Pages deployment
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
 };
 
 export default nextConfig;
