@@ -3,8 +3,6 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import podcastImage from "@/assets/images/darknet-diaries.png";
 import Image from "next/image";
-import HTMLIcon from "@/assets/icons/html5.svg";
-import CSSIcon from "@/assets/icons/css3.svg";
 import SassIcon from "@/assets/icons/sass.svg";
 import TailwindCSSIcon from "@/assets/icons/tailwindcss.svg";
 import JavaScriptIcon from "@/assets/icons/square-js.svg";
@@ -12,6 +10,11 @@ import NodeJSIcon from "@/assets/icons/nodeJS.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import JiraIcon from "@/assets/icons/jira.svg";
+import PostmanIcon from "@/assets/icons/postman.svg";
+import CypressIcon from "@/assets/icons/cypress.svg";
+import SeleniumIcon from "@/assets/icons/selenium.svg";
+import PostgreSQLIcon from "@/assets/icons/postgresql.svg";
+
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
@@ -20,17 +23,16 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 
 const toolboxDevItems = [
-  { title: "HTML5", iconType: HTMLIcon },
-  { title: "CSS3", iconType: CSSIcon },
   { title: "Sass", iconType: SassIcon },
   { title: "TailwindCSS", iconType: TailwindCSSIcon },
+  { title: "PostgreSQL", iconType: PostgreSQLIcon },
   { title: "JavaScript", iconType: JavaScriptIcon },
   { title: "Node.js", iconType: NodeJSIcon },
   { title: "React", iconType: ReactIcon },
   { title: "GitHub", iconType: GithubIcon },
 ];
 
-const toolQAItems = [{ title: "Jira/Zephyr Scale", iconType: JiraIcon }];
+const toolQAItems = [{ title: "Postman", iconType: PostmanIcon }, { title: "Jira/Zephyr Scale", iconType: JiraIcon }, { title: "Cypress", iconType: CypressIcon }, { title: "Selenium", iconType: SeleniumIcon }];
 
 const hobbies = [
   { title: "Travelling", emoji: "✈️", left: "5%", top: "5%" },

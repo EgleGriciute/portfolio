@@ -1,5 +1,6 @@
 import portfolioProject01 from "@/assets/images/portfolio-project-01.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import portfolioProject02 from "@/assets/images/portfolio-project-02.png";
+import portfolioProject03 from "@/assets/images/portfolio-project-03.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -21,28 +22,28 @@ const portfolioProjects = [
     image: portfolioProject01,
   },
   {
-    testType: "Manual testing",
-    year: "2024",
-    title: "Project title #2",
+    testType: "Exploratory testing",
+    year: "2025",
+    title: "ToDoList",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Created detailed test cases covering core functionality;" },
+      { title: "Documented detected bugs with steps to reproduce;" },
+      { title: "Identified functional defects;" },
     ],
-    link: "https://github.com/EgleGriciute",
-    image: lightSaasLandingPage,
+    link: "https://github.com/EgleGriciute/manual-testing/tree/main/toDoList",
+    image: portfolioProject02,
   },
   {
     testType: "Automation testing",
-    year: "2024",
-    title: "Project title #3",
+    year: "2025",
+    title: "Coming soon ...",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Test target - simulated online banking system;" },
+      { title: "Functional/feature testing;" },
+      { title: "Tech stack: Cypress, Playwright;" },
     ],
     link: "https://github.com/EgleGriciute",
-    image: aiStartupLandingPage,
+    image: portfolioProject03,
   },
 ];
 
