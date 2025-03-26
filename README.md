@@ -1,4 +1,4 @@
-# Egle Griciute's Portfolio Website 📄
+# Portfolio Website 📄
 
 ## Overview
 This is a personal portfolio website showcasing my professional work, skills, and projects. The website is designed to provide a comprehensive view of my professional journey, skills, and creative capabilities.
